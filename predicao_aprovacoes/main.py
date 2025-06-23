@@ -36,6 +36,7 @@ arvore.predict([[5,5,5]])
 arvore.predict_proba([[5,5,5]])
 
 # %%
+# Obtém as probabilidades de cada classe para a entrada especificada
 probabilidades = arvore.predict_proba([[5,5,5]])[0]
 pd.Series(probabilidades, index=arvore.classes_)
 
